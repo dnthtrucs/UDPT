@@ -1,0 +1,17 @@
+{
+    "name": "truc/lazer-database",
+    "autoload": {
+        "psr-4": {
+            "Truc\\LazerDatabase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dnthtruc",
+            "email": "22010313@st.phenikaa-uni.edu.vn"
+        }
+    ],
+    "require": {
+        "greg0/lazer-database": "^2.0"
+    }
+}

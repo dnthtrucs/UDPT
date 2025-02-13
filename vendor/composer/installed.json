@@ -1,0 +1,73 @@
+{
+    "packages": [
+        {
+            "name": "greg0/lazer-database",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lazer-Database/Lazer-Database.git",
+                "reference": "5a5be5edcbdf933466420b1dbafd5ff75ab7d7e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lazer-Database/Lazer-Database/zipball/5a5be5edcbdf933466420b1dbafd5ff75ab7d7e5",
+                "reference": "5a5be5edcbdf933466420b1dbafd5ff75ab7d7e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "dms/phpunit-arraysubset-asserts": "^0.4.0",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^7.0 || ^8.0",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "time": "2023-11-28T16:40:38+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Lazer\\": "src/",
+                    "Lazer\\Test\\": "tests/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grzegorz Kuźnik",
+                    "email": "gerg0sz92@gmail.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "PHP library to use JSON files like flat-file database",
+            "homepage": "https://github.com/Greg0/Lazer-Database",
+            "keywords": [
+                "Simple",
+                "database",
+                "db",
+                "file",
+                "flat",
+                "json",
+                "lazer"
+            ],
+            "support": {
+                "issues": "https://github.com/Lazer-Database/Lazer-Database/issues",
+                "source": "https://github.com/Lazer-Database/Lazer-Database/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/anant-svc",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../greg0/lazer-database"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
