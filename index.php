@@ -19,6 +19,8 @@ if (Validate::table('users')->exists()) {
 Lazer::create('users', [
     'id' => 'integer',
     'name' => 'string',
+    'age' => 'integer',
+    'address' => 'string',
     'email' => 'string',
     'role_id' => 'integer'
 ]);
@@ -27,14 +29,16 @@ echo "Bảng 'users' đã được tạo.\n";
 
 // Thêm dữ liệu vào bảng 'users'
 $usersData = [
-    ['name' => 'Truc', 'email' => 'truc@example.com', 'role_id' => 1],
-    ['name' => 'Dung', 'email' => 'dung@example.com', 'role_id' => 2],
-    ['name' => 'Duong', 'email' => 'duong@example.com', 'role_id' => 3]
+    ['name' => 'Truc', 'age' => 20, 'address' => 'NamGiang', 'email' => 'truc@example.com', 'role_id' => 1],
+    ['name' => 'Dung', 'age' => 25, 'address' => 'NamTruc', 'email' => 'dung@example.com', 'role_id' => 2],
+    ['name' => 'Duong', 'age' => 30, 'address' => 'NamDinh', 'email' => 'duong@example.com', 'role_id' => 3]
 ];
 
 foreach ($usersData as $data) {
     $user = Lazer::table('users');
     $user->name = $data['name'];
+    $user->age = $data['age'];
+    $user->address = $data['address'];
     $user->email = $data['email'];
     $user->role_id = $data['role_id'];
     $user->save();
@@ -46,7 +50,7 @@ echo "Đã thêm 3 người dùng.\n";
 $users = Lazer::table('users')->findAll();
 echo "Danh sách người dùng:\n";
 foreach ($users as $user) {
-    echo "- Name: {$user->name}, Email: {$user->email}\n";
+    echo "- Name: {$user->name}, Age: {$user->age}, Address: {$user->address}, Email: {$user->email},\n";
 }
 
 // Cập nhật email của Dung
